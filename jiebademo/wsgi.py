@@ -139,6 +139,7 @@ if __name__ == "__main__":
     #run()
     from wsgiref.simple_server import make_server
     httpd = make_server('localhost', 8080, default_app())
+    # print "Please visit http://127.0.0.1:8080"
     # Wait for a single request, serve it and quit.
     httpd.serve_forever()
 else:
